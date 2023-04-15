@@ -5,14 +5,14 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-    public event Action onMainMenu;
-    public event Action onItemsMenu;
-    public event Action onARPosition;
+    public event Action OnMainMenu;
+    public event Action OnItemsMenu;
+    public event Action OnARPosition;
 
     public static GameManager instance;
     private void Awake()
     {
-        if(instance!=null && instance != this)
+        if(instance != null && instance != this)
         {
             Destroy(gameObject);
         }
@@ -27,25 +27,19 @@ public class GameManager : MonoBehaviour
         MainMenu();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MainMenu()
     {
-        onMainMenu?.Invoke();
+        OnMainMenu?.Invoke();
         Debug.Log("Main Menu Activated");
     }
     public void ItemsMenu()
     {
-        onItemsMenu?.Invoke();
+        OnItemsMenu?.Invoke();
         Debug.Log("Items Menu Activated");
     }
     public void ARPosition()
     {
-        onARPosition?.Invoke();
+        OnARPosition?.Invoke();
         Debug.Log("AR Position Activated");
     }
     public void CloseAPP()
