@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 338b5f6c033b258468353808e7b91a92, type: 3}
-  m_Name: Carro1Prueba
+  m_Name: Carro2
   m_EditorClassIdentifier: 
-  ItemName: Carro1Prueba
-  ItemImage: {fileID: 21300000, guid: bde0efde649e1f24ea33e9511f3c7ceb, type: 3}
-  ItemDescription: Carro1
-  Item3DModel: {fileID: 4168610861969548569, guid: c4d698c1657e1e54e835db170ed7b898, type: 3}
+  ItemName: Carro2Prueba
+  ItemImage: {fileID: 21300000, guid: dcb5d99ca586a8c489438fe51ab2cd36, type: 3}
+  ItemDescription: Carro de prueba 2
+  Item3DModel: {fileID: 706812235038700377, guid: 86dea1dff4e8ecd4585f00b096f8ccc0, type: 3}
